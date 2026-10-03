@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- Codificación UTF-8: permite acentos y la letra ñ -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Adapta la página al ancho de pantallas móviles -->
+<title>Formulario con radio button</title>
+<!-- Título que aparece en la pestaña del navegador -->
+</head>
+<body>
+<h1>Formulario con radio button</h1>
+<p>Botones de opción: solo se puede elegir una opción del grupo.</p>
+<form action="" method="post">
+Ingresa tu nombre:
+<input type="text" name="nombre">
+<br>
+Selecciona el maximo de estudios que tienes:
+<br>
+<!-- type="radio": botón de opción. Solo se puede elegir UNA opción del grupo.
+     Todos comparten el mismo name ("estudios") para formar el grupo;
+     value es el dato que se envía al servidor según la opción elegida. -->
+<input type="radio" name="estudios" value="1">Sin estudios <br>
+<input type="radio" name="estudios" value="2">Primaria <br>
+<input type="radio" name="estudios" value="3">Secundaria <br>
+<input type="radio" name="estudios" value="4">Preparatoria <br>
+<input type="submit" value="enviar">
+<input type="reset" value="borrar">
+</form>
+</body>
+<!-- Fin del contenido visible -->
+</html>
+<!-- Fin del documento HTML -->

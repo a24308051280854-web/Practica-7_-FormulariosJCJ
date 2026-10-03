@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- Declara que el documento usa HTML5 -->
+<html lang="es">
+<!-- <html>: elemento raíz. lang indica el idioma del documento -->
+<head>
+<meta charset="UTF-8">
+<!-- Codificación UTF-8: permite acentos y la letra ñ -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Adapta la página al ancho de pantallas móviles -->
+<title>Formulario con selección</title>
+<!-- Título que aparece en la pestaña del navegador -->
+</head>
+<body>
+<!-- <body>: contenido visible de la página -->
+<h1>Formulario con selección</h1>
+<!-- <h1>: título principal de la página -->
+<p>Lista desplegable con &lt;select&gt; y &lt;option&gt;.</p>
+<!-- <p>: párrafo de texto -->
+<!--
+  ATRIBUTOS COMUNES DE <form>:
+  - action: URL del programa en el servidor que recibe los datos. Vacío ("") = la misma página.
+  - method: forma de enviar los datos. post = dentro de la petición (no visible en la URL);
+            get = en la URL (visible, ideal para búsquedas).
+  - name (en cada campo): nombre con el que el servidor identifica el dato recibido.
+-->
+<form action="" method="post">
+Ingresa tu nombre:
+<input type="text" name="nombre"><br>
+Selecciona tu pais:
+<select name="pais">
+<!-- <select>: lista desplegable. El name identifica el dato elegido -->
+<option value="1">Argentina</option>
+<!-- <option>: cada elemento de la lista. value = dato enviado; el texto interno = lo que ve el usuario -->
+<option value="2">España</option>
+<option value="3">Mexico</option>
+<option value="4">Guatemala</option>
+<option value="5">Honduras</option>
+<option value="6">El Salvador</option>
+<option value="7">Venezuela</option>
+<option value="8">Colombia</option>
+</select>
+<br>
+<input type="submit" value="enviar">
+<input type="reset" value="borrar">
+</form>
+</body>
+<!-- Fin del contenido visible -->
+</html>
+<!-- Fin del documento HTML -->

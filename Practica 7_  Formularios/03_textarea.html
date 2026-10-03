@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- Declara que el documento usa HTML5 -->
+<html lang="es">
+<!-- <html>: elemento raíz. lang indica el idioma del documento -->
+<head>
+<meta charset="UTF-8">
+<!-- Codificación UTF-8: permite acentos y la letra ñ -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Adapta la página al ancho de pantallas móviles -->
+<title>Formulario con textarea</title>
+<!-- Título que aparece en la pestaña del navegador -->
+</head>
+<body>
+<!-- <body>: contenido visible de la página -->
+<h1>Formulario con textarea</h1>
+<!-- <h1>: título principal de la página -->
+<p>Campos de texto, correo electrónico y texto de varias líneas.</p>
+<!-- <p>: párrafo de texto -->
+<!--
+  ATRIBUTOS COMUNES DE <form>:
+  - action: URL del programa en el servidor que recibe los datos. Vacío ("") = la misma página.
+  - method: forma de enviar los datos. post = dentro de la petición (no visible en la URL);
+            get = en la URL (visible, ideal para búsquedas).
+  - name (en cada campo): nombre con el que el servidor identifica el dato recibido.
+-->
+<form action="" method="post">
+Ingresa tu nombre:
+<input type="text" name="nombre">
+<br>
+Ingresa tu correo:
+<input type="email" name="correo">
+<!-- type="email": el navegador valida que el texto tenga formato de correo (con @) -->
+<br>
+Ingresa tus comentarios:
+<textarea name="comentarios" rows="1" cols="10"></textarea>
+<!-- <textarea>: texto de varias líneas. rows = alto en líneas, cols = ancho en caracteres.
+     Se cierra con </textarea> (no es una etiqueta vacía como <input>) -->
+<br>
+<input type="submit" value="enviar">
+<input type="reset" value="borrar">
+</form>
+</body>
+<!-- Fin del contenido visible -->
+</html>
+<!-- Fin del documento HTML -->

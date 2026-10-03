@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!-- Codificación UTF-8: permite acentos y la letra ñ -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Adapta la página al ancho de pantallas móviles -->
+<title>Ejemplo básico</title>
+</head>
+<body>
+<h1>Ejemplo básico</h1>
+<p>Formulario mínimo: un campo de texto y un botón de envío.</p>
+<!--
+  ATRIBUTOS COMUNES DE <form>:
+  - action: URL del programa en el servidor que recibe los datos. Vacío ("") = la misma página.
+  - method: forma de enviar los datos. post = dentro de la petición (no visible en la URL);
+            get = en la URL (visible, ideal para búsquedas).
+  - name (en cada campo): nombre con el que el servidor identifica el dato recibido.
+-->
+<form action="" method="post">
+<!-- <form>: contenedor de todos los campos que se enviarán juntos -->
+Ingresa tu nombre:
+<input type="text" name="nombre" size="20">
+<!-- type="text": campo de texto de una línea. size="20": ancho visible aproximado de 20 caracteres -->
+<br>
+<!-- <br>: salto de línea -->
+<input type="submit" value="enviar">
+<!-- type="submit": botón que envía el formulario. value: texto que muestra el botón -->
+</form>
+</body>
+</html>

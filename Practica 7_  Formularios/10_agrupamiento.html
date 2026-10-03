@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- Declara que el documento usa HTML5 -->
+<html lang="es">
+<!-- <html>: elemento raíz. lang indica el idioma del documento -->
+<head>
+<meta charset="UTF-8">
+<!-- Codificación UTF-8: permite acentos y la letra ñ -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Adapta la página al ancho de pantallas móviles -->
+<title>Formulario con agrupamiento</title>
+<!-- Título que aparece en la pestaña del navegador -->
+<!-- Libreria de iconos en linea (Font Awesome), usada en los botones con la etiqueta <i> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/7.3.1/css/all.min.css">
+</head>
+<body>
+<!-- <body>: contenido visible de la página -->
+<h1>Formulario con agrupamiento</h1>
+<!-- <h1>: título principal de la página -->
+<p>Agrupación de campos relacionados con &lt;fieldset&gt; y &lt;legend&gt;.</p>
+<!-- <p>: párrafo de texto -->
+<!--
+  ATRIBUTOS COMUNES DE <form>:
+  - action: URL del programa en el servidor que recibe los datos. Vacío ("") = la misma página.
+  - method: forma de enviar los datos. post = dentro de la petición (no visible en la URL);
+            get = en la URL (visible, ideal para búsquedas).
+  - name (en cada campo): nombre con el que el servidor identifica el dato recibido.
+-->
+<form action="" method="post" enctype="multipart/form-data">
+<!-- enctype="multipart/form-data" porque el formulario contiene campos de archivo -->
+<fieldset>
+<!-- <fieldset>: agrupa campos relacionados y dibuja un recuadro a su alrededor -->
+<legend>Datos personales</legend>
+<!-- <legend>: título del grupo, se muestra sobre el borde del recuadro -->
+Nombre y apellido:
+<input type="text" name="nombre_apellido"><br>
+Documento valido:
+<input type="file" name="documento"><br>
+Fecha de nacimiento:<input type="date" name="fecha_nacimiento">
+<!-- type="date": muestra un selector de calendario para elegir una fecha -->
+</fieldset>
+<fieldset>
+<legend>Datos de estudio:</legend>
+Nombre de la escuela:
+<input type="text" name="escuela"><br>
+Certificado valido:
+<input type="file" name="certificado"><br>
+Fecha de egreso:
+<input type="date" name="fecha_egreso">
+</fieldset>
+<br>
+<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!-- <button> permite incluir iconos o HTML dentro. <i class="fa-regular fa-paper-plane"> muestra un avión de papel (Font Awesome) -->
+<button type="reset">Borrar <i class="fa fa-trash"></i></button>
+<!-- type="reset" restablece los campos a su valor inicial; <i class="fa fa-trash"> muestra una papelera -->
+</form>
+</body>
+<!-- Fin del contenido visible -->
+</html>
+<!-- Fin del documento HTML -->
